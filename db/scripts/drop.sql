@@ -1,0 +1,24 @@
+DROP INDEX IF EXISTS accessory_serial_number;
+DROP INDEX IF EXISTS accessory_price;
+DROP INDEX IF EXISTS car_part_serial_number;
+DROP INDEX IF EXISTS car_part_price;
+DROP INDEX IF EXISTS consumable_serial_number;
+DROP INDEX IF EXISTS consumable_price;
+
+DROP TABLE IF EXISTS buyer_order;
+DROP TABLE IF EXISTS shopping_cart_entry;
+DROP TABLE IF EXISTS shopping_cart;
+DROP TABLE IF EXISTS review;
+DROP TABLE IF EXISTS buyer;
+DROP TABLE IF EXISTS seller_consumable;
+DROP TABLE IF EXISTS consumable;
+DROP TABLE IF EXISTS seller_car_part;
+DROP TABLE IF EXISTS car_to_car_part;
+DROP TABLE IF EXISTS car_part;
+DROP TABLE IF EXISTS car;
+DROP TABLE IF EXISTS seller_accessory;
+DROP TABLE IF EXISTS accessory;
+DROP TABLE IF EXISTS car_brand;
+DROP TABLE IF EXISTS seller;
+DROP TABLE IF EXISTS account;
+DROP TABLE IF EXISTS serial_number;
