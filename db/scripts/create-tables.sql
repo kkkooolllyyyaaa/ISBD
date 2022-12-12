@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS serial_number
 (
-    id SERIAL PRIMARY KEY
+    id int PRIMARY KEY
 );
 
 CREATE TABLE IF NOT EXISTS account
@@ -36,8 +36,9 @@ CREATE TABLE IF NOT EXISTS seller
 CREATE TABLE IF NOT EXISTS shopping_cart
 (
     id        SERIAL PRIMARY KEY,
-    amount     float NOT NULL CHECK (amount > 0),
-    buyer_id integer REFERENCES buyer (id)
+    amount    float NOT NULL CHECK (amount > 0),
+    buyer_id  integer REFERENCES buyer (id),
+    is_active bool DEFAULT FALSE
 );
 
 CREATE TABLE IF NOT EXISTS shopping_cart_entry
